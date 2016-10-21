@@ -17,7 +17,6 @@ import ch.makery.address.MainApp;
  */
 public class RootLayoutController {
 
-    // Reference to the main application
     private MainApp mainApp;
 
     /**
@@ -64,6 +63,9 @@ public class RootLayoutController {
      */
     @FXML
     private void handleSave() {
+    	
+    	
+    	
         File personFile = mainApp.getPersonFilePath();
         if (personFile != null) {
             mainApp.savePersonDataToFile(personFile);
